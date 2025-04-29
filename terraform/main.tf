@@ -20,7 +20,7 @@ resource "aws_instance" "app_server" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("~/.ssh/id_rsa")
+      # private_key = file("~/.ssh/id_rsa")
       host        = self.public_ip
     }
 
